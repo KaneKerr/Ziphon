@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/*start*/
+
+.tipscontainer {
+  background-image: url('/src/Assets/Images/DarkBg.svg');
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 943px;
+  overflow: hidden;
+}
+
+/*flipping tips css*/
+.turn{
+  overflow: hidden;
+      position: relative;
+      float: right;
+      height: 100px;
+      padding-top: 10px;
+      margin-top: -10px;
+      position: absolute;
+    top: 70%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.text-box {
+  color: #fafafa;
+  font-weight: 700;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block; /*removes the bullet point from the list*/
+}
+
+
+
+
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip5 { animation: flip5 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+  0% { margin-top: -180px; }
+  5% { margin-top: -90px;  }
+  50% { margin-top: -90px; }
+  55% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -180px; }
+}
+
+@keyframes flip3 {
+  0% { margin-top: -270px; }
+  5% { margin-top: -180px; }
+  33% { margin-top: -180px; }
+  38% { margin-top: -90px; }
+  66% { margin-top: -90px; }
+  71% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+  0% { margin-top: -360px; }
+  5% { margin-top: -270px; }
+  25% { margin-top: -270px; }
+  30% { margin-top: -180px; }
+  50% { margin-top: -180px; }
+  55% { margin-top: -90px; }
+  75% { margin-top: -90px; }
+  80% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -360px; }
+}
+
+@keyframes flip5 {
+  0% { margin-top: -450px; }
+  5% { margin-top: -360px; }
+  20% { margin-top: -360px; }
+  25% { margin-top: -270px; }
+  40% { margin-top: -270px; }
+  45% { margin-top: -180px; }
+  60% { margin-top: -180px; }
+  65% { margin-top: -90px; }
+  80% { margin-top: -90px; }
+  85% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -450px; }
+}
+
+
+
+/*flipping text CSS end*/
+
+
+.container2 {
+  position: relative;
+  width: 100%;
+}
+
+
+
+
+
+
+@keyframes fade-in {
+  100% {
+      opacity: 1;
+      filter: blur(0);
+  }
+}
+
+
+
+
+.monitor-wrapper{
+  background: #32d58c;
+  width: 580px;
+  height: 138px;
+  box-shadow: #868585;
+  top: 0;
+  left: 0px;
+  right: 5px;
+  bottom: 0;
+  margin: auto;
+  border-radius: 8px;
+  border: 5px solid black;
+  }
+
+  
+  .monitor {
+    background: #13211a;
+    width: 570px;
+    height: 125px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: inset 0px 5px 10px 2px rgba(0,0,0,0.3);
+    bottom: 0;    
+    margin: auto;
+    position: absolute;
+    top: 159px;
+    left: 30px;
+    border-radius: 10px;
+    
+    }
+    
+    
+      .tips-text {
+        position: absolute;
+        top: 250px;
+        left: 50%;
+        transform: translate(-50%);
+        padding: 20px;
+        color: #32d58c;
+        font-family: 'Inter', sans-serif;
+        font-size: clamp(21px, 3.5vw, 50px);
+        font-weight: bold;
+        z-index: 1;
+        text-align: center;
+      }
+.text-title{
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(21px, 3.5vw, 50px);
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+}

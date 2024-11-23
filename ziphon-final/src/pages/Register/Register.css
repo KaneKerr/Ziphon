@@ -1,0 +1,133 @@
+/*
+.container {
+    height: 763px;
+}
+*/
+
+
+.signUp {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2E3631;
+    box-shadow: 0px 0px 15px #00FFA9;
+    border-radius: 35px;
+}
+
+.welcome {
+    padding-left: 50px;
+    margin-bottom: 0;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 35px;
+    color: #00FFA9;
+}
+
+#tagline {
+    padding-left: 50px;
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: #00AD73;
+}
+
+.registrationFields {
+    box-sizing: border-box;
+
+    display: block;
+    width: 400px;
+    height: 30px;
+    margin: auto;   
+    padding-left: 50px;
+
+    border: 1px solid #00FFA9;
+    border-radius: 10px;
+    background-color: transparent;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: #c9d1cc;
+}
+
+input::placeholder {
+    color: #c9d1cc;
+}
+
+.input-icons i {
+    position: absolute;
+    color: #c9d1cc;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.iconRegister {
+    margin-top: -14px;
+    margin-left: 47px;
+    width: 20px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.signUpBtn:hover {
+    box-shadow: 0px 0px 20px #00FFA9;
+    transition: 0.5s;
+}
+
+.signUpBtn:active {
+    box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.1);
+    transition: 0.1s;
+}
+
+.loginNow{
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    left: 230px;
+    bottom: 50px;
+}
+
+.loginNow:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1210px) {
+    .signUp {  
+        width: 450px;
+        height: 550px;
+    }
+
+    .input-field {
+        width: 350px;
+    }
+
+    #tagline {
+        margin-bottom: 30px;
+    }
+
+    .iconRegister {
+        margin-top: -14px;
+        margin-left: 25px;
+    }
+
+    .loginNow {
+        left: 205px;
+        bottom: 25px;
+    }
+}

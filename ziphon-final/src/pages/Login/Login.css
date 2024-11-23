@@ -1,0 +1,159 @@
+.loginBox {
+    width: 590px;
+    height: 610px;
+    border-radius: 35px;
+    background-color: #2E3631;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 15px #00FFA9;
+}
+
+#login {
+    text-align: left;
+    padding-left: 57px;
+    margin-top: 35px;
+    color: #00FFA9;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+#p1 {
+    text-align: left;
+    padding-left: 57px;
+    margin-top: -30px;
+    color: #00AD73;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+
+.loginForm {
+    text-align: center;
+    margin-top: 65px;
+}
+
+
+.input-icons i {
+    position: absolute;
+    color: #c9d1cc;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    margin-top: -2px;
+    margin-left: -8px;
+    width: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+  
+.loginFields {
+    width: 440px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 30px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #00FFA9;
+    color: #c9d1cc;
+}
+
+.input-field::placeholder {
+    color: #c9d1cc;
+}
+
+#btn {
+    height: 47px;
+    width: 137px;
+    color: #c9d1cc;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid #00FFA9;
+    cursor: pointer;
+}
+
+#btn:hover {
+    transition: .5s; 
+    box-shadow: 0 0 20px #00FFA9;
+}
+
+#btn:active {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: 0.1s;
+}
+
+
+a {
+    font-size: 15px;
+    color: #c9d1cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.registerLink{
+    position: absolute;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    left: 263px;
+    bottom: 120px;
+}
+
+.registerLink:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+    .loginBox {
+        width: 505px;
+        height: 570px;
+    }
+
+    .registerLink {
+        left: 220px;
+        bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .loginBox {
+        width: 450px;
+        height: 570px;
+    }
+
+    #login {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    
+    #p1 {
+        font-size: 20px;
+    }
+
+    .loginFields {
+        width: 370px;
+    }
+    
+    .registerLink {
+        left: 195px;
+        bottom: 110px;
+    }
+}

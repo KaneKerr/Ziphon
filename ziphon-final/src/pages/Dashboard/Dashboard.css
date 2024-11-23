@@ -1,0 +1,235 @@
+.section1 { grid-area: username;}
+.section2 { grid-area: title;}
+.section3 { grid-area: more;}
+.section4 { grid-area: popular;}
+.section5 { grid-area: percentage-bar;}
+.section6 { grid-area: graph2;}
+.section7 { grid-area: section7;}
+.section11 { grid-area: info;}
+
+/*used a grid layout so that the area can be much better visually, and held together with different sections*/
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'more more title title title title username'
+    'more more section7 section7 section7 section7 popular'
+    'more more percentage-bar percentage-bar percentage-bar percentage-bar popular'
+    'more more graph2 graph2 graph2 graph2 popular'
+    'more more info   info   info   info   popular';
+  gap: 5px;
+  background-color: #2e3631;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.grid-container > .section1{
+  background-color: #2e3631;
+  box-shadow: 0px 0px 10px #00FFA9;
+  text-align: center;
+  padding: 0px 0 30px 0;
+  font-size: 20px;
+  object-fit: cover;
+  height: 80px;
+
+}
+
+.grid-container > .section2{
+  background-color: #2e3631;
+  box-shadow: 0px 0px 10px #00FFA9;
+  border-radius: 10px;
+  padding: 20px 0;
+  font-size: 20px;
+  object-fit: cover;
+  height: 50px;
+}
+.grid-container > .section3{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+.grid-container > .section4{
+  box-shadow: 0px 0px 10px #00FFA9;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 20px;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 420px;
+  color: rgb(255, 255, 255);
+}
+
+.grid-container > .section5{
+  background-color: #3c805d;
+  box-shadow: 0px 0px 10px #00FFA9;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.grid-container > .section6{
+  background-color: #3c805d;
+  box-shadow: 0px 0px 10px #3c805d;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.grid-container > .section7 {
+  background-color: #3c805d;
+  box-shadow: 0px 0px 10px #00FFA9;
+  /*width: 1500px;*/ /* Subtracting 30px to account for margin and padding */
+  height: 300px; /* Set the height to enable scrolling */
+  margin-bottom: 25px;
+  border-radius: 15px;
+  overflow-y: scroll; /* Enable vertical scrolling */
+  object-fit: cover;
+}
+
+
+.tableInfo {
+  font-size: 20px;
+  color: #C9D1CC;
+  padding: 5px;
+
+}
+
+
+.grid-container > .section11{
+  background-color: #cad1ca;
+  box-shadow: 0px 0px 10px #00FFA9;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.box:hover {
+transform: scale(1.1);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+box-shadow: 0px 0px 10px #00FFA9;
+}
+  
+/* Slide-out box */
+.slide-right {
+  position: fixed;
+  top: 0;
+  left: -2000px; /* Change this to adjust the initial position */
+  width: 200px; /* Change this to adjust the width of the box */
+  height: 820px;
+  background-color: rgba(51, 44, 44, 0.5); /* Change this to adjust the background color and transparency */
+  color: white;
+  padding: 20px;
+  transition: left 0.5s ease-in-out;
+  z-index: 1;
+}
+  
+  .slide-right.visible {
+    left: 0;
+  }
+ 
+  .slide-right-button {
+    position: relative;
+    bottom: 0;
+    left: 25px;
+    top: 370px;
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    }
+  
+.slide-right-button:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+.Largebutton{
+  width: 200px;
+  height: 600px ;
+  color: white ;
+  background-color: black ;
+  box-shadow: 4px 4px 15px 0;
+  
+  }
+
+.question-container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question-container label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.question-container input[type="text"],
+.question-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.question-container textarea {
+  height: 200px;
+}
+
+.Form {
+  text-align: center;
+  margin-top: 25px;
+  color: #00FFA9;
+  font-size: 50px;
+  letter-spacing: 3px;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/*skills bar to showcase if the user is good or bad*/
+
+
+/* Container for skill bars */
+.container-skills {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  border-radius: 50px;
+}
+
+.skills-bar {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+  
+}
+
+.savingRatings10 {width: 100%; background-color: #04AA6D;}
+.savingRatings9 {width: 90%; background-color: #04AA6D;}
+.savingRatings8 {width: 80%; background-color: #04AA6D;}
+.savingRatings7 {width: 70%; background-color: #9ce206;}
+.savingRatings6 {width: 60%; background-color: #eae204;}
+.savingRatings5 {width: 50%; background-color: #ffea01;}
+.savingRatings4 {width: 40%; background-color: #e68200;}
+.savingRatings3 {width: 30%; background-color: #db7f06;}
+.savingRatings2 {width: 20%; background-color: #d24300;}
+.savingRatings1 {width: 10%; background-color: #be0909;}

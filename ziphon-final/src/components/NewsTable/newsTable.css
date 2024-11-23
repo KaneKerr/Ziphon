@@ -1,0 +1,33 @@
+.table-container {
+    height: 300px;
+    overflow: auto;
+}
+
+.table-container::-webkit-scrollbar {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    font: 'Inter', sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid #00FFA9;
+    color: #C9D1CC;
+}
+
+td {
+    font: 'Inter', sans-serif;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #00FFA9;
+    color: #C9D1CC;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 17%;
+    text-align: center;
+}
